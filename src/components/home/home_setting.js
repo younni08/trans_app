@@ -5,13 +5,13 @@ const Home = () => {
         <div className="home">
             <div className="setting">
                 <div className="setting_expand">
-                    <span>이미지 설정</span>
+                    <span>기본 설정</span>
                     <span><i className="xi-angle-down-min"></i></span>
                 </div>
                 <div className="setting_item">
-                    <span>이미지 글자 인식기</span>
+                    <span>Language</span>
                     <div>
-                        <span>한국어</span>
+                        <span>Korean(한국어)</span>
                     </div>
                 </div>
                 <div className="setting_item">
@@ -35,13 +35,11 @@ const Home = () => {
                 </div>
                 <div className="setting_expand2">
                     <span>텍스트 설정</span>
-                    <span><i className="xi-angle-down-min"></i></span>
+                    <span><i className="xi-angle-up-min"></i></span>
                 </div>
-                <div className="setting_item">
-                    <span>이미지 글자 인식기</span>
-                    <div>
-                        <span>한국어</span>
-                    </div>
+                <div className="setting_expand3">
+                    <span>이미지 설정</span>
+                    <span><i className="xi-angle-up-min"></i></span>
                 </div>
             </div>
         </div>

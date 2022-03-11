@@ -42,12 +42,11 @@ body {
   align-items: center;
   width:calc(50% - 10px)
 }
-.home_lv1 > div ion-icon{
-  font-size: 20px;
-  color:#2196F3;
-}
 .home_lv1 > div > span:first-child{
   display:flex;
+  font-size: 20px;
+  color:#2196F3;
+  font-weight: bold;
   align-items: center;
 }
 .home_lv1 > div > span:last-child{
@@ -57,26 +56,38 @@ body {
   align-items: flex-end;
   font-weight: bold;
   color:#323232;
+  background: #f6f6f6;;
+  padding:5px 10px;
+  width:70px;
+  border-radius: 5px;
 }
 .home_lv2{
   display:flex;
-  width:calc(100% - 50px);
-  padding:0px 25px;
-  height:300px;
+  width:100%;
+  height:370px;
+  background:#f6f6f6;
   justify-content: center;
   align-items: center;
-  margin:20px 0px 0px 0px;
+  margin:0px 0px 0px 0px;
 }
 .home_lv2 > div{
   display:flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  color:#fff;
+  color:#323232;
   font-weight: bold;
-  height:300px;
   width:100%;
-  background:#2196F3;
+  color:#2196F3;
+}
+.home_lv2 > div > span:first-child ion-icon{
+  font-size: 40px;
+}
+.home_lv2 > div > span:last-child{
+  display:flex;
+  font-size: 0.8rem;
+  margin:5px 0px 0px 0px;
 }
 .home_lv21{
   display:flex;
@@ -176,22 +187,18 @@ body {
 .home_lv23{
   display:flex;
   width:calc(100% - 50px);
-  padding:0px 25px;
-  height:300px;
+  padding:10px 25px;
+  height:350px;
   justify-content: center;
-  align-items: center;
-  margin:20px 0px 0px 0px;
+  margin:0px 0px 0px 0px;
+  background:#f6f6f6;
 }
 .home_lv23 > div{
   display:flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 5px;
   color:#323232;
   font-weight: bold;
-  height:300px;
   width:100%;
-  border:solid 1px #eaeaea;
   background:#f6f6f6;
 }
 .home_lv3{
@@ -255,7 +262,7 @@ body {
   width:78px;
   font-weight: bold;
 }
-.home > div:nth-child(4){
+/* .home > div:nth-child(4){
   background:#5fd5a2;
   margin:20px 0px 0px 0px;
 }
@@ -274,7 +281,7 @@ body {
 }
 .home > a:nth-child(6){
   background:#0d55ad;
-}
+} */
 .home_lv5{
   display:flex;
   width:100%;
@@ -283,6 +290,80 @@ body {
   align-items: center;
   font-weight: bold;
   font-size: 0.9rem;
+}
+.home_buttons{
+  display:flex;
+  width:calc(100% - 50px);
+  padding:0px 25px;
+  margin:20px 0px 0px 0px;
+  justify-content: center;
+}
+.bu1{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:10px 0px 0px 0px;
+}
+.bu1 > span:nth-child(1){
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:0px 0px 5px 0px;
+  padding:12px 10px;
+  border-radius: 25px;
+  color:#fff;
+}
+.bu1 > span:nth-child(2){
+  font-size: 0.9rem;
+  font-weight: bold;
+  color:#7f7f7f;
+}
+
+.bu2{
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin:0px 45px;
+  position: relative;
+}
+.bu2 > span:first-child{
+  padding:12px 12px;
+  border-radius: 25px;
+  color:#fff;
+  background: #2196f3;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+.bu2 > span:first-child ion-icon{
+  font-size: 30px;
+}
+
+.bu1:first-child > span.green{
+  background: #5fd5a2;
+}
+.bu1:last-child > span.dark{
+  background:		#0d55ad;
+}
+.bu1:last-child > span.green{
+  background: #5fd5a2;
+}
+.bu1:first-child > span.dark{
+  background:		#0d55ad;
+}
+.bu1 > span.blue{
+  background: #2196f3;
+}
+.bu2 > span.green{
+  background: #5fd5a2;
+}
+.bu2 > span.dark{
+  background:		#0d55ad;
+}
+.bu2 > span.blue{
+  background: #2196f3;
 }
 /* ______________________________ topnavi _________________________________ */
 .setting{
@@ -294,7 +375,7 @@ body {
   display:flex;
   justify-content: space-between;
   width:calc(100% - 50px);
-  padding:7px 25px;
+  padding:5px 25px;
   background: #2196F3;
   color:#fff;
 }
@@ -302,6 +383,7 @@ body {
   display:flex;
   align-items: center;
   font-weight: bold;
+  font-size: 0.9rem;
 }
 .setting_expand > span:last-child{
   display:flex;
@@ -311,7 +393,7 @@ body {
   display:flex;
   justify-content: space-between;
   width:calc(100% - 50px);
-  padding:7px 25px;
+  padding:5px 25px;
   background: #2196F3;
   color:#fff;
   margin:20px 0px 0px 0px;
@@ -320,6 +402,7 @@ body {
   display:flex;
   align-items: center;
   font-weight: bold;
+  font-size: 0.9rem;
 }
 .setting_expand2 > span:last-child{
   display:flex;
@@ -329,19 +412,39 @@ body {
   display:flex;
   justify-content: space-between;
   width:calc(100% - 50px);
-  padding:7px 25px;
+  padding:5px 25px;
   background: #2196F3;
   color:#fff;
+  
   margin:5px 0px 0px 0px;
 }
-.setting_expand2 > span:first-child{
+.setting_expand3 > span:first-child{
   display:flex;
   align-items: center;
+  font-size: 0.9rem;
   font-weight: bold;
 }
-.setting_expand2 > span:last-child{
+.setting_expand3 > span:last-child{
   display:flex;
   align-items: center;
+}
+.setting_expand4{
+  display:flex;
+  width:100%;
+  overflow: hidden;
+  padding:5px 0px 5px 10px;
+  background:#eaeaea;
+}
+.setting_expand4 > span{
+  font-size: 0.9rem;
+  display:flex;
+  white-space: nowrap;
+  padding:5px 10px;
+  background:#2196f3;
+  border-radius: 5px;
+  font-weight: bold;
+  color:#fff;
+  margin:0px 10px 0px 0px;
 }
 .setting_item{
   display:flex;
@@ -461,6 +564,58 @@ body {
 }
 .sidenavi_lv1 > div > span ion-icon{
   font-size: 25px;
+}
+
+
+.sidenavi_lv11{
+  display:flex;
+  flex-direction: column;
+  width:calc(100% - 20px);
+  padding:10px 10px;
+}
+.sidenavi_lv11 > div:first-child{
+  display:flex;
+  align-items: flex-end;
+  width:100%;
+  margin:0px 0px 5px 0px;
+}
+.sidenavi_lv11 > div:first-child > span:first-child{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.sidenavi_lv11 > div:first-child > span:last-child{
+  display:flex;
+  margin:0px 0px 0px 5px;
+  font-size: 0.9rem;
+  color:#7f7f7f;
+  font-weight: bold;
+}
+.sidenavi_lv11 > div:last-child{
+  display:flex;
+  width:100%;
+}
+.sidenavi_lv11 > div:last-child > div:nth-child(1){
+  display:flex;
+  width:calc(50%)
+}
+.sidenavi_lv11 > div:last-child > div:nth-child(1) > span:first-child{
+  display:flex;
+  margin:0px 5px 0px 0px;
+  font-size: 0.8rem;
+  color:#2196F3;
+  font-weight: bold;
+}
+.sidenavi_lv11 > div:last-child > div:nth-child(1) > span:last-child{
+  font-size: 0.8rem;
+  color:#7f7f7f;
+  font-weight: bold;
+}
+.sidenavi_lv11 > div:last-child > div:nth-child(2){
+  display:flex;
+  font-size: 0.8rem;
+  color:#2196F3;
+  font-weight: bold;
+  width:calc(50%);
 }
 .sidenavi_lv2{
   display:flex;

@@ -3,7 +3,6 @@ import Topnavi from "./components/common/topnavi";
 import {Link, Route, Routes } from "react-router-dom";
 import Home from "./components/home/home";
 import Home1 from "./components/home/home_image";
-import Home11 from "./components/home/home_image2";
 import Home2 from "./components/home/home_setting";
 import Home3 from "./components/home/home_text";
 import Home4 from "./components/home/home_history";
@@ -19,7 +18,6 @@ const Root = () => {
                     <Route exact path="/2" element={<Home3 />} />
                     <Route exact path="/3" element={<Home2 />} />
                     <Route exact path="/4" element={<Home4 />} />
-                    <Route exact path="/11" element={<Home11 />} />
                 </Routes> 
             </div>
         </div>
